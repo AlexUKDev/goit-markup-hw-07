@@ -1,0 +1,50 @@
+
+.pros-list,
+.team-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Pros section syles  */
+.pros-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.pros-list__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  border-radius: 4px;
+  background: var(--btn-bg-color);
+}
+.pros-list__icon {
+  width: 70px;
+  height: 70px;
+}
+.pros-list__item {
+  width: 270px;
+}
+.pros-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.pros-list__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.142;
+  color: var(--title-text-color);
+}
+.pros-list__text {
+  line-height: 1.71;
+}

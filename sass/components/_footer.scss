@@ -1,0 +1,20 @@
+
+/* Footer section styles */
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--gray-bg-color);
+}
+
+/* Footer container styles */
+.container--flex-baseline {
+  display: flex;
+  align-items:baseline;
+}
+
+.footer-title{
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
