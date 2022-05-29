@@ -42,6 +42,10 @@
       margin-right: 10px;
     }
 
+    &--darck {
+      background-color: var(--footer-icons-bg);
+    }
+
     &:hover,
     &:focus {
       background-color: var(--accent-color);
