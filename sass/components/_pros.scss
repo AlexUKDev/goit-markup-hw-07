@@ -1,6 +1,5 @@
 
-.pros-list,
-.team-list {
+.pros-list {
   display: flex;
 
   margin: 0;
@@ -8,11 +7,6 @@
   list-style: none;
 }
 
-/* Pros section syles  */
-.pros-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .pros-list__icon-wrap {
   display: flex;
   align-items: center;

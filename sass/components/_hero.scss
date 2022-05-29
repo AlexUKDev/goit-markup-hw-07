@@ -1,7 +1,5 @@
-
-
 /* Hero-section styles*/
-.hero-section {
+.hero {
     height: fit-content;
     text-align: center;
   
@@ -23,11 +21,11 @@
     background-size: cover;
   }
   
-  .container--hero-wrap {
+  .container__hero {
     width: 696px;
   }
   
-  .hero-section__title {
+  .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;

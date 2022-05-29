@@ -7,22 +7,22 @@
 
 .portfolio-content {
   display: flex;
-}
-.portfolio-content {
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .portfolio-content__item {
   margin-right: 30px;
   margin-bottom: 30px;
-}
 
-.portfolio-content__item:nth-child(3n) {
-  margin-right: 0;
-}
-.portfolio-content__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
 }
 
 .portfolio-content__wrap {

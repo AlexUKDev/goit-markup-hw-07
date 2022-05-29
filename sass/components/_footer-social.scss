@@ -1,16 +1,11 @@
 
-/* Footer SOCIAL list */
-.footer-social-list__wrap {
+.footer-social__wrap {
   margin-left: 70px;
   margin-right: 93px;
   text-transform: uppercase;
 }
 
-.social-list--footer-margin {
-  margin-top: 20px;
-}
-
-.social-list__item--footer-darck {
+.social__item--darck {
   fill: var(--primary-white-color);
   background-color: var(--footer-icons-bg);
 

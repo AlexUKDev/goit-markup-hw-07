@@ -37,18 +37,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-// Styles for all titles
-.title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-}
-// Удалить когда по БЕМУ переделаю классы в портфолио / временный баг фикс с вплывающим описанием
-.thumb {
-  position: relative;
-}

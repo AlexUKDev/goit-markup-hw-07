@@ -1,22 +1,13 @@
 
-/* Costomers section styles */
-.customers-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* УДАЛИЛ
 .customers {
-  height: 184px;
-} */
-
-.customers-list {
   display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
 }
-.customers-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-.customers-list__link {
+
+.customers__link {
   fill: var(--default-social-icon-color);
   display: flex;
   align-items: center;
@@ -30,10 +21,11 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customers-list__link:hover,
-.customers-list__link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+
 }
