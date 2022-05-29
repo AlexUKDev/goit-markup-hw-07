@@ -1,6 +1,6 @@
 
 /* Footer section styles */
-.footer-section {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -8,9 +8,8 @@
 }
 
 /* Footer container styles */
-.container--flex-baseline {
-  display: flex;
-  align-items:baseline;
+.container__footer {
+    @include displayFlex($align:baseline);
 }
 
 .footer-title{

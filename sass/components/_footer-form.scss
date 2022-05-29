@@ -21,23 +21,23 @@
   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
-
   outline: none;
+
+    &::placeholder{
+      font-size: 16px;
+      line-height: 1.25;
+
+      color: var(--primary-white-color);
+      opacity: 60%;
+    }
+
+    &:focus-within{
+    color:var(--primary-white-color);
+    background: transparent;
+    }
+
 }
 
-.footer-form__input::placeholder{
-font-size: 16px;
-line-height: 1.25sdf;
-
-  color: var(--primary-white-color);
-  opacity: 60%;
-  
-}
-.footer-form__input:focus-within{
-color:var(--primary-white-color);
-background: transparent;
-  
-}
 .footer-form__btn {
   display: flex;
   justify-content: center;

@@ -1,23 +1,21 @@
 /* Header styles */
-.header-section {
+.header {
     border-bottom: 1px solid var(--border-bottom-color);
   }
-  .container--flex-center {
-    display: flex;
-    align-items: center;
+  .container__header {
+    @include displayFlex();
   }
   
   /* Main Navigation */
   
   .navigation {
-    display: flex;
-    align-items: center;
+    @include displayFlex();
   }
   
   .navigation-menu,
   .contacts-list {
-    display: flex;
-    align-items: center;
+    @include displayFlex();
+
     margin-left: 93px;
   
     letter-spacing: 0.02em;
@@ -37,27 +35,72 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .navigation-menu__link,
+  .navigation-menu__link{
+     @include displayFlex();
+
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      } 
+  }
+  
   .contacts-link {
-    display: flex;
-    align-items: center;
+    @include displayFlex();
   
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     text-decoration: none;
   
-    transition-property: color;
+    transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+      }
   }
+
+
+  // .navigation-menu__link,
+  // .contacts-link {
+  //   display: flex;
+  //   align-items: center;
+  
+  //   color: var(--primary-text-color);
+  //   fill: var(--primary-text-color);
+  //   text-decoration: none;
+  
+  //   transition-property: color;
+  //   transition-duration: 250ms;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // }
+
+  // .navigation-menu__link:hover,
+  // .navigation-menu__link:focus,
+  // .contacts-link:hover,
+  // .contacts-link:focus {
+  //   color: var(--accent-color);
+  //   fill: var(--accent-color);
+  // }
   
   .navigation-menu__item {
     position: relative;
+      &:not(:last-child){
+        margin-right: 50px;
+      }
   }
   
-  .navigation-menu__item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // .navigation-menu__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
   
   .contacts-list__item:not(:last-child) {
     margin-right: 50px;
@@ -91,15 +134,5 @@
   
   .navigation-menu__link--active {
     color: var(--accent-color);
-  }
-  
-  /* Hover and focus styles for links*/
-  
-  .navigation-menu__link:hover,
-  .navigation-menu__link:focus,
-  .contacts-link:hover,
-  .contacts-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
   }
   
