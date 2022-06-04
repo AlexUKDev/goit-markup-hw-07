@@ -430,6 +430,10 @@ ul {
   font-weight: 500;
 }
 
+.contacts-list {
+  margin-left: auto;
+}
+
 .contacts-list__item:not(:last-child) {
   margin-right: 0;
   margin-bottom: 10px;
