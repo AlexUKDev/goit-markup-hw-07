@@ -122,26 +122,27 @@
       margin-right: 0;
       margin-bottom: 10px;
 
-      @media screen and (max-width:767px) {
-        font-size:  34px;
-        line-height: 1.18; 
-        margin-bottom: 32px;
-        .contacts-link {
-          color: var(--accent-color);
-        }
-      }
+      // @media screen and (max-width:767px) {
+      //   font-size:  34px;
+      //   line-height: 1.18; 
+      //   margin-bottom: 32px;
+      //   .contacts-link {
+      //     color: var(--accent-color);
+      //   }
+      // }
 
       @media screen and (min-width:1200px) {
         margin-right: 50px;
         margin-bottom: 0;
       }
     }
-      &__item:last-child .contacts-link{
-        @media screen and (max-width:767px) {
-          font-size: 24px;
-          line-height: 28px;
-          }
-        }
+      // &__item:last-child .contacts-link{
+      //   @media screen and (max-width:767px) {
+      //     font-size: 24px;
+      //     line-height: 28px;
+      //     }
+      //   }
+    
 
     &__icon{
       margin-right: 10px;
@@ -149,15 +150,14 @@
         display: none;
       }
     }
+
     @media screen and (max-width:767px) {
       width: fit-content;
       flex-direction: column;
       margin: 0;
       align-items: baseline;
     }
-    // @media screen and (max-width:767px) {
-    //   margin-left: auto;
-    // }
+    
     @media screen and (min-width:768px) {
       flex-direction: column;
       justify-content: center;
@@ -169,6 +169,29 @@
     }
 }
 
+.contacts-list--reverse{
+  @media screen and (max-width:767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.contacts-link--mob-size{
+  @media screen and (max-width:767px) {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+.contacts-link--mob-accent{
+  @media screen and (max-width:767px) {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+  }
+}
 
 .navigation-menu__link{
   @include displayFlex();
@@ -204,19 +227,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-  // &:last-child{
-  // //   @media screen and (max-width:767px) {
-  // //     font-size: 24px;
-  // //     line-height: 28px;
-  // //   }
-  // // }
-
     &:hover,
     &:focus {
       color: var(--accent-color);
       fill: var(--accent-color);
     }
 }
+
+
 
 .navigation-menu__item {
   position: relative;
