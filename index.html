@@ -25,64 +25,87 @@
 </head>
 <body>
 
-    <!-------- Header section -------->
     <header class="header">
         <div class="container container__header">
-            <!-------- Navigation -------->
-            <nav class="navigation">
-                <a href="./index.html" class="logo">
-                    <span class="logo__accent-color">Web</span>Studio
-                </a>
+            <a href="./index.html" class="logo">
+                <span class="logo__accent-color">Web</span>Studio
+            </a>
+            <button 
+            type="button" 
+            class="mob-menu__btn"
+            data-menu-button
+            >
+                    <svg 
+                    class="mob-menu__icon"
+                    aria-label="Переключатель мобильного меню">
 
-                <!--------- Navigation menu -------->
-                <ul class="navigation-menu">
-                    <li class="navigation-menu__item">
-                        <a href="#" class="navigation-menu__link navigation-menu__link--active">
-                        Студия
+                    <use 
+                    class="icon-open" 
+                    href="./images/icons.svg#icon-open-menu" 
+                    width="40px" 
+                    height="40px"></use>
+                    <use 
+                    class="icon-close" 
+                    href="./images/icons.svg#icon-close-menu" 
+                    width="40px" 
+                    height="40px"></use>
+                    </svg>
+                </button>
+            <div class="menu-container" data-menu>
+
+                <nav class="navigation">
+                
+
+                    
+                    <ul class="navigation-menu">
+                        <li class="navigation-menu__item">
+                            <a href="#" class="navigation-menu__link navigation-menu__link--active">
+                            Студия
+                            </a>
+                        </li>
+                        <li class="navigation-menu__item">
+                            <a href="./portfolio.html" class="navigation-menu__link">
+                            Портфолио
+                            </a>
+                        </li>
+                        <li class="navigation-menu__item">
+                            <a href="#" class="navigation-menu__link">
+                            Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-link">
+                            
+                                <svg class="contacts-list__icon" width="16px" height="12px">
+                                    <use href="./images/icons.svg#icon-mailto"></use>
+                                </svg>
+
+                            info@devstudio.com
                         </a>
                     </li>
-                    <li class="navigation-menu__item">
-                        <a href="./portfolio.html" class="navigation-menu__link">
-                        Портфолио
-                        </a>
-                    </li>
-                    <li class="navigation-menu__item">
-                        <a href="#" class="navigation-menu__link">
-                        Контакты
+                    <li class="contacts-list__item">
+                        <a href="tel:+380961111111" class="contacts-link">
+                            
+                                <svg class="contacts-list__icon" width="10px" height="16px">
+                                    <use href="./images/icons.svg#icon-mobile"></use>
+                                </svg>
+                        
+                            +38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <!-------- Сontacts --------> 
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a href="mailto:info@devstudio.com" class="contacts-link">
-                        
-                            <svg class="contacts-list__icon" width="16px" height="12px">
-                                <use href="./images/icons.svg#icon-mailto"></use>
-                            </svg>
 
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a href="tel:+380961111111" class="contacts-link">
-                        
-                            <svg class="contacts-list__icon" width="10px" height="16px">
-                                <use href="./images/icons.svg#icon-mobile"></use>
-                            </svg>
-                    
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
 
     </header>
 
-    <!-------- Main content section -------->
     <main>
-        <!-------- Section after Header vs nav menu -------->
+        
         <section class="hero">
             <div class="container container__hero">
                 
@@ -98,14 +121,14 @@
         </section>
         
         <!-------- Pros section --------->
+
         <section class="section">
             <div class="container">
-                <!-- Semantic header (As shown in the video by Alexander Repeta).
-                                H2 tag not showing in html page flow. Is hidden with visually-hidden -->
+
                 <h2 class="section__title visually-hidden">
                     Приемущества студии
                 </h2>
-                <!-- List of excellence -->
+
                 <ul class="pros-list">
                     <li class="pros-list__item">
                         <div class="pros-list__icon-wrap">
@@ -165,7 +188,8 @@
         </section>
 
         <!-------- What are we doing section -------->
-        <section class="section section--nopadding-top">
+
+      <section class="section section--nopadding-top"> 
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="skills">
@@ -219,11 +243,12 @@
         </section>
 
         <!-------- Our team section -------->
+
         <section class="section section--gray-bg">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 
-                <!-- Team list -->
+                
                 <ul class="team">
                     <li class="team__item">
                         <img 
@@ -400,7 +425,9 @@
             </div>
             
         </section>
+
         <!-------- Customers section --------->
+
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
@@ -452,7 +479,9 @@
             </div>
 
         </section>
+
         <!-------- Modal -------->
+ 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal__close-btn" data-modal-close>
@@ -539,22 +568,23 @@
                 </form>
             </div>
         </div>
+        
     </main>
 
     <!-------- Footer section -------->
+
     <footer class="footer">
         <div class="container container__footer">
             <div class="footer-address__wrap">
-                <!-------- Logo -------->
+
                 <a href="./index.html" class="logo logo--footer-white">
                     <span class="logo__accent-color">Web</span>Studio
                 </a>
                 
-                <!-------- The address --------->
                 <address class="address">
                     г. Киев, пр-т Леси Украинки, 26
                 
-                    <!-------- Сontacts --------->
+                   
                     <ul class="contacts-list contacts-list--footer">
                         <li class="contacts-list__item">
                             <a href="mailto:info@devstudio.com" class="contacts-link">
@@ -615,18 +645,20 @@
                     class="footer-mail-input footer-form__input"
                     >
                     </label>
-                    <button type="submit" class="btn footer-form__btn">
-                        Подписаться
-                        <svg width="24px" height="24px" class="footer-form__icon-btn">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
+                        <button type="submit" class="btn footer-form__btn">
+                            Подписаться
+                            <svg width="24px" height="24px" class="footer-form__icon-btn">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
                 </form>
             </div>
 
         </div>
         
     </footer>
+
+    <script src="./js/mob-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

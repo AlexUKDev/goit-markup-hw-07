@@ -2,7 +2,11 @@
 /* What are we doing (skils-section) */
 
 .skills {
-  display: flex;
+  display: none;
+   @media screen and (min-width:1200px) {
+      display: flex;
+    }
+  
 }
 .skills__item:not(:last-child) {
   margin-right: 30px;

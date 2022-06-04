@@ -10,7 +10,21 @@
 
 /* Footer container styles */
 .container__footer {
-    @include displayFlex($align:baseline);
+
+
+  // @include displayFlex($align:baseline);
+  @media screen and (min-width:768px) {
+      max-width: 768px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-around;
+      align-items:baseline;
+    }
+  @media screen and (min-width:1200px) {
+      flex-wrap: nowrap;
+    }
 }
 
 .footer-title{
@@ -19,8 +33,22 @@
 }
 
 .footer-social__wrap {
-  margin-left: 70px;
-  margin-right: 93px;
+  // margin-left: 70px;
+  // margin-right: 93px;
+  text-align: center;
   text-transform: uppercase;
+
+     @media screen and (min-width:480px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width:768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width:1200px) {
+      text-align: unset;
+      margin-left: 70px;
+      margin-right: 93px;
+    }
 }
 

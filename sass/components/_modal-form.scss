@@ -77,7 +77,14 @@
   justify-content: center;
 
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.16;
+  font-size: 12px;
+  // line-height: 1.71;
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
 }
 
 .modal-form__icon-check-wrap{
@@ -95,6 +102,15 @@
   transition-property: fill,background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width:480px) {
+      margin-right: 6px;
+    }
+
+  @media screen and (min-width:1200px) {
+        margin-right: 8px;
+  }
+
 }
 
 .modal-form__input-check:checked + 
@@ -108,6 +124,16 @@
   display: inline-block;
   margin-left: 4px;
   color: var(--accent-color);
+
+   @media screen and (min-width:480px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
 }
 
 .modal-form__btn-submit {
