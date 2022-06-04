@@ -1,6 +1,8 @@
 .filter-menu {
   display: flex;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 
   color: var(--title-text-color);
   font-size: 16px;
@@ -9,7 +11,21 @@
    
     &__item:not(:last-child) {
       margin-right: 8px;
+      margin-bottom: 10px;
     }
+    @media screen and (min-width:768px) {
+      margin-bottom: 30px;
+      
+    }
+
+    @media screen and (max-width:768px) {
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+    @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+    }
+
 }
 
 .filter-menu__btn {
